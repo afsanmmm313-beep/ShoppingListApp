@@ -40,7 +40,7 @@ class MainActivity:AppCompatActivity(){
    override fun onNothingSelected(p:AdapterView<*>?){}
    override fun onItemSelected(p:AdapterView<*>?,v:View?,pos:Int,id:Long){current=lists[pos];render()}
   }
-  search=EditText(this).apply{hint="🔎 جستجوی کالا...";singleLine=true}
+  search=EditText(this).apply{hint="🔎 جستجوی کالا...";isSingleLine=true}
   search.addTextChangedListener(object:android.text.TextWatcher{
    override fun beforeTextChanged(s:CharSequence?,a:Int,c:Int,d:Int){}
    override fun onTextChanged(s:CharSequence?,a:Int,b:Int,c:Int){render()}
